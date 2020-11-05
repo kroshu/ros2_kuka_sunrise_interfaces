@@ -24,7 +24,13 @@ find_package(rosidl_default_generators REQUIRED)
 
 	
 rosidl_generate_interfaces(${PROJECT_NAME}
-	"srv/SetInt.srv")
+	"msg/FrameOfData.msg"
+        "srv/SetInt.srv"
+        "srv/CortexRequestInt.srv"
+        "srv/CortexRequestFloat.srv"
+        "srv/CortexRequestEmpty.srv"
+        "srv/CortexRequestEmptyWithArg.srv"
+        "srv/CortexRequestFod.srv")
 
 
 if(BUILD_TESTING)
